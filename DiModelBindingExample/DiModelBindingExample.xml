@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DiModelBindingExample</name>
+    </assembly>
+    <members>
+        <member name="M:DiModelBindingExample.Infrastructure.Extensions.AddRequests(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add the Command, Notification and Query requests to the service collection.
+            </summary>
+            <param name="serviceCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiModelBindingExample.Infrastructure.Extensions.IsSubclassOfRawGeneric(System.Type,System.Type)">
+            <summary>
+            Alternative version of <see cref="M:System.Type.IsSubclassOf(System.Type)"/> that supports raw generic types (generic types without
+            any type parameters).
+            </summary>
+            <param name="generic">The base type class for which the check is made.</param>
+            <param name="toCheck">To type to determine for whether it derives from <paramref name="generic"/>.</param>
+        </member>
+        <member name="T:DiModelBindingExample.Models.Commands.Command`1">
+            <summary>
+            A command request.
+            </summary>
+            <typeparam name="TResponse"></typeparam>
+        </member>
+        <member name="M:DiModelBindingExample.Models.Commands.Command`1.#ctor(DiModelBindingExample.Infrastructure.IRepository)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:DiModelBindingExample.Models.Commands.Command`1.Execute">
+            <summary>
+            Execute the command.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
