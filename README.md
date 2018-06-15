@@ -22,4 +22,5 @@ Helpful docs / blogposts / SO links:
 
 https://www.newtonsoft.com/json/help/html/DeserializeWithDependencyInjection.htm
 http://www.dotnetcurry.com/aspnet-mvc/1368/aspnet-core-mvc-custom-model-binding
+http://www.dotnet-programming.com/post/2017/03/17/Custom-Model-Binding-in-Aspnet-Core-2-Model-Binding-Interfaces.aspx
 https://stackoverflow.com/questions/35616035/mvc-6-custom-model-binder-with-dependency-injection
