@@ -14,11 +14,10 @@ namespace DiModelBindingExample.Infrastructure
         {
             var result = base.CreateObjectContract(objectType);
 
-            var instance = _serviceProvider.GetService(objectType);            
+            var instance = _serviceProvider.GetService(objectType); // returns null if the service isn't registered.
             if (instance != null)
-            {               
-                result.DefaultCreator = () => _serviceProvider.GetService(objectType);
-             
+            {
+                result.DefaultCreator = () => instance;// _serviceProvider.GetService(objectType);
             }
 
             return result;
