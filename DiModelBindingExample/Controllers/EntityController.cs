@@ -12,7 +12,7 @@ namespace DiModelBindingExample.Controllers
     {
         [HttpPost("AddEntityCommand")]
         [SwaggerOperation("Add Entity")]
-        public Task<ActionResult<SomeEntity>> AddEntityn(AddEntityCommand command) =>
+        public Task<ActionResult<SomeEntity>> AddEntity(AddEntityCommand command) =>
             Task.Run<ActionResult<SomeEntity>>(() => Ok(command.Execute().Result));
     }
 }
